@@ -142,40 +142,48 @@ p, a {
 
 /*------------------------------------------------------------------------------------------------------------*/
 
-/*Projects*/
+/*Works*/
 
-.projects-container {
+.work-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between; 
-  padding: 20px;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
-.project {
-  width: 25%;
-  height: auto;
-  padding-left: 3%;
-  padding-right: 3%;
+.work-img {
+  width: auto;
 }
 
-.project-title {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: 300;
-  padding-bottom: 2%;
-}
-
-.project-img {
-  padding: 2%;
+.work-img img {
   width: 300px;
-  height: 300px; 
-  object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
 }
 
-.project-text {
+.work-title {
+  padding-left: 3%;
+  width: auto;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.work-title-text {
+  font-size: 1.3em;
+}
+
+.work-text {
+  font-size: 1em;
   text-align: justify;
-  font-size: 0.8em;
-  font-weight: 300;
-  display: block;
+}
+
+.work-arrow {
+  font-size: 2em;
+}
+
+.work-arrow p:hover {
+  font-size: 1.1em;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
