@@ -14,89 +14,66 @@
 <body>
 
     <header>
-        <p>Juan Cobo</p>
-        <a href="#about-me">ABOUT ME</a>
-        <a href="#works">WORKS</a>
-        <a href="#footer">CONTACT</a>
+        <p>JUAN COBO</p>
+        <div id="links">
+            <a href="#about-me">ABOUT ME</a>
+            <a href="#works">WORKS</a>
+            <a href="#footer">CONTACT</a>
+        </div>
     </header>
 
     <section id="main">
-        <p id="presentation">
-            Computer science and<br>AI engineering
-        </p>
-        <a href='#about-me' id="scroll">↓ Scroll down to see more ↓</a>
-
+        <a id="name">JUAN COBO</a>
+        <p>Computer science and<br>AI engineering</p>
+        <a id="scroll" href='#about-me'>↓ Scroll down to see more ↓</a>
     </section>
 
     <section id="about-me">
-        <p class="title">ABOUT ME</p>
-        <p id="about-me-text">
+        <a>ABOUT ME</a>
+        <p>
             I am Juan Cobo, a fourth-year student in Computer Science at Carlos III University of Madrid. I am passionate about data science 
             and artificial intelligence engineering. Through various projects, I have developed a deep understanding of these matters, and I 
-            am looking forward to applying this knowledge professionally. My goal is to contribute innovative solutions to real-world challenges 
-            in the field, leveraging the skills and insights I've gained during my academic journey. 
+            am looking forward to applying this knowledge professionally.
         </p>
-        <div class="cv">
-            <p class="cv-title">EDUCATION</p>
-            <p class="cv-subtitle">University Carlos III Madrid, Spain</p>
-            <p class="cv-text">Bachelor's in Computer Engineering 2020-2024</p>
-            <p class="cv-subtitle">IES Gran Capitán Madrid, Spain</p>
-            <p class="cv-text">Bachillerato in Science 2018-2020</p>
-            <p class="cv-subtitle">Coosa High School Gadsden, AL, United States</p>
-            <p class="cv-text">Exchange Program	2017-2018</p>
-
-            
-            <p class="cv-title">TECHNICAL SKILLS</p>
-            <p class="cv-subtitle">Advanced Python skills</p>
-            <p class="cv-text">Throughout my studies, I have undertaken numerous projects using Python, gaining extensive experience in the language across various domains.</p>
-            <p class="cv-subtitle">Artificial intelligence</p>
-            <p class="cv-text">Practical experience in AI implementation, I have a solid understanding of machine learning and deep learning principles.</p>
-            <p class="cv-subtitle">SQL and NoSQL Databases</p>
-            <p class="cv-text">Practical experience with both relational and non relational databases and their implementation and optimization.</p>
-            <p class="cv-subtitle">Front-end Development</p>
-            <p class="cv-text">Proficient in front-end development technologies, possessing a strong foundation in HTML, CSS, and JavaScript.</p>
-            
-            <p class="cv-title">LANGUAGES</p>
-            <p class="cv-subtitle">Spanish (Native)</p>
-            <p class="cv-subtitle">English (C1 Advanced)</p>
-        </div>
     </section>
 
     <section id="works">
-        <p class="title">WORKS</p>
+        <a>SELECTED WORKS</a>
         <div class="work-container">
-            <img src="covid-e.png" alt="imagen">
-            <div class="work-text-container">
-                <p id="work-title">Predictive Modeling of COVID-19 Spread using Artificial Neural Networks</p>
-                <p id="work-text">
-                    I successfully used Artificial Neural Networks in RapidMiner to predict COVID-19 spread, 
-                    optimizing models and employing a Multilayer Perceptron for time series analysis, building 
-                    a model capable of predicting the number of cases in Spain with a great accuracy.
-                </p>
+            <div class="work">
+                <img src="covid-e.png" alt="imagen">
+                <div class="work-text-container">
+                    <p id="work-title">Predictive Modeling of COVID-19 Spread using Artificial Neural Networks</p>
+                    <p id="work-text">
+                        I successfully used Artificial Neural Networks in RapidMiner to predict COVID-19 spread, 
+                        optimizing models and employing a Multilayer Perceptron for time series analysis, building 
+                        a model capable of predicting the number of cases in Spain with a great accuracy.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="recomendacion-e.png" alt="imagen">
+                <div class="work-text-container">
+                    <p id="work-title">Optimizing Car Recommendations for Market Segments</p>
+                    <p id="work-text">
+                        My group used MATLAB's Fuzzy Logic Toolbox to create an expert system for car selection based on market preferences. We 
+                            defined fuzzy sets for input variables and recommendation levels, utilizing real-world car data from coches.rastreator.com.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="reviews-e.png" alt="imagen">
+                <div class="work-text-container">
+                    <p id="work-title">Text Mining and Opinion Classification in Hotel Reviews</p>
+                    <p id="work-text">
+                        In our Data Mining and AI project using RapidMiner, we analyzed 18,172 Andalusian hotel reviews, predicting ratings from 
+                        preprocessed text. Classifiers were built and evaluated with cross-validation, exploring n-grams and word embeddings.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="work-container">
-            <img src="recomendacion-e.png" alt="imagen">
-            <div class="work-text-container">
-                <p id="work-title">Optimizing Car Recommendations for Market Segments</p>
-                <p id="work-text">
-                    My group used MATLAB's Fuzzy Logic Toolbox to create an expert system for car selection based on market preferences. We 
-                        defined fuzzy sets for input variables and recommendation levels, utilizing real-world car data from coches.rastreator.com.
-                </p>
-            </div>
-        </div>
-        <div class="work-container">
-            <img src="reviews-e.png" alt="imagen">
-            <div class="work-text-container">
-                <p id="work-title">Text Mining and Opinion Classification in Hotel Reviews</p>
-                <p id="work-text">
-                    In our Data Mining and AI project using RapidMiner, we analyzed 18,172 Andalusian hotel reviews, predicting ratings from 
-                    preprocessed text. Classifiers were built and evaluated with cross-validation, exploring n-grams and word embeddings.
-                </p>
-            </div>
-        </div>
-    </section>
-
+    </section>   
+    
     <footer id="footer">
         <a href="mailto:jcoboceldran@gmail.com" class="email">Email</a>
         <a href="https://drive.google.com/file/d/16ITBf15tx26XlBzYhtzfm5GaE6yCq7uo/view?usp=sharing"class="curriculum">Curriculum</a>
