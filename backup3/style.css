@@ -9,12 +9,9 @@ html {
     background-color: var(--color2);
 }
 
-* {
+body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
     margin: 0;
-    padding: 0;
-    text-decoration: none;  
-    font-size: 10pt;
-    font-weight: 300;
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -104,7 +101,7 @@ html {
 /* Main */
 
 #main {
-    margin: 2vh 2vh 2vh 2vh;
+    margin: 2vh;
     background: url('background9.jpg') center/200% no-repeat;
     /*background-color: red;*/
     border-radius: 4vh;
@@ -132,125 +129,151 @@ html {
 /* About me */
 
 #about-me {
+    margin: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    margin-top: 2vh;
-    padding-top: 13vh;
+    height: 100vh;
 }
 
-.section {
+@media only screen and (min-width: 700px) {
+    #about-me a {
+        font-size: calc(0.75vw + 0.75vh);
+        color: var(--color1);
+        padding-bottom: 1vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #about-me a {
+        font-size: calc(1.5vw + 1.5vh);
+        color: var(--color1);
+        padding-bottom: 1vh;
+    }
+}
+
+#about-me p {
+    text-align: center;
+    font-size: calc(1.5vw + 1.5vh);
+    color: var(--color1);
+    width: 70vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Works */
+
+#works {
+    margin: 2vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 10vh;
-    width: 70vw;
+    align-items: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 700px) {
+    #works a {
+        font-size: calc(0.75vw + 0.75vh);
+        color: var(--color1);
+        padding-bottom: 2vh;
+    }
 
-    .section {
+    .work-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 10vh;
-        width: 90vw;
+        align-items: center;
+        width: 30vw;
+        border-radius: 4vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
     }
 
-    #work {
-        display: flex;
-        flex-direction: column;
+    .work img {
+        width: 30vw;
+        height: 20vw;
+        object-fit: cover;
+        border-radius: 4vh;
     }
 
+    .work-text-container {
+        padding-top: 1vh;
+    }
+    
     #work-title {
-        font-size: calc(1.25vw + 1.25vh);
+        font-size: calc(1vw + 1vh);
         color: var(--color1);
-        font-weight: 200;
-        width: 100%;
-        text-align: justify;
-        padding-right: 0vw;
-        font-style: italic;
+        font-weight: 400;
+        text-align: center;
     }
-
+    
     #work-text {
-        font-size: calc(1.25vw + 1.25vh);
+        font-size: calc(0.75vw + 0.75vh);
         color: var(--color1);
-        width: 100%;
-        font-weight: 200;
+        font-weight: 400;
         text-align: justify;
-   
-    }
-
-    .skill-title {
-        font-size: calc(1.25vw + 1.25vh);
-        color: var(--color1);
-        font-weight: 200;
-        text-align: left;
-        width: 28vw;
-        padding-right: 2vw;
-        font-style: italic;
-    }
-
-    .skill-text {
-        font-size: calc(1.25vw + 1.25vh);
-        color: var(--color1);
-        font-weight: 200;
-        text-align: justify;
-        width: 60vw;    
     }
 }
 
-@media only screen and (min-width: 900px) {
-    .section {
+@media only screen and (max-width: 700px) {
+    #works a {
+        font-size: calc(1.5vw + 1.5vh);
+        color: var(--color1);
+        padding-bottom: 0vh;
+    }
+
+    .work-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 10vh;
-        width: 70vw;
+        align-items: center;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        border-radius: 4vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        padding-top: 2vh;
+    }
+
+    .work img {
+        width: 80vw;
+        height: 60vw;
+        object-fit: cover;
+        border-radius: 4vh;
+    }
+
+    .work-text-container {
+        padding-top: 1vh;
+        padding-bottom: 3vh;
     }
     
-    .skill-title {
-        font-size: calc(1.25vw + 1.25vh);
+    #work-title {
+        font-size: calc(1.5vw + 1.5vh);
         color: var(--color1);
-        font-weight: 200;
-        text-align: left;
-        width: 18vw;
-        padding-right: 2vw;
+        font-weight: 400;
+        text-align: center;
     }
     
-    .skill-text {
-        font-size: calc(1.25vw + 1.25vh);
+    #work-text {
+        font-size: calc(1.2vw + 1.2vh);
         color: var(--color1);
-        font-weight: 200;
+        font-weight: 400;
         text-align: justify;
-        width: 50vw;    
     }
 }
-
-.section-title {
-    font-size: calc(0.75vw + 0.75vh);
-    color: var(--color1);
-    font-weight: 500;
-    padding-bottom: 1vh;
-}
-
-.section-text {
-    font-size: calc(1.25vw + 1.25vh);
-    color: var(--color1);
-    font-weight: 200;
-    text-align: justify;
-}
-
-.skill {
-    display: flex;
-    padding-bottom: 2vh;
-}
-
-
-
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Footer */
@@ -262,6 +285,7 @@ html {
         justify-items: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 10vh;
         margin-left: 2vh;
         margin-right: 2vh;
         margin-bottom: 2vh;
@@ -415,8 +439,8 @@ html {
         font-weight: 200;
         padding-top: 1vh;
         padding-bottom: 1vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
     }
 
     footer a:hover {
