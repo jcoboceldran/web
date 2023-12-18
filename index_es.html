@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon1.png">
+    <title>Juan Cobo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="english">
+        <header>
+            <h2>JUAN COBO</h2>
+            <nav>
+                <a href="#about-me">SOBRE MÍ</a>
+                <a href="#works">PROYECTOS</a>
+                <a href="#footer">CONTACTO</a>
+            </nav>
+        </header>
+
+        <section id="main">
+            <h2 id="name">JUAN COBO</h2>
+            <h1>Informática e<br>ingeniería de IA</h1>
+            <a href='#about-me'>↓ Desplazate hacia abajo para ver más ↓</a>
+            <div onclick="changeToSpanish()">
+                <a href="#">EN</a>
+                <img class="flag" src="uk.png" alt="Spain flag">
+            </div>
+        </section>
+
+        <section id="about-me">
+            <article> 
+                <h3>01 SOBRE MÍ</h3>
+                <p>Soy Juan Cobo, un estudiante de cuarto año de Ingeniería Informática en la Universidad Carlos III de Madrid. Me apasiona la ciencia de datos y la ingeniería de inteligencia artificial. A través de diversos proyectos, he desarrollado un profundo entendimiento de estos temas y estoy deseando aplicar este conocimiento de manera profesional</p>
+            </article>
+            <article>
+                <h3>02 HABILIDADES TÉCNICAS</h3>
+                <div>
+                    <h4>Lenguajes de programación</h4>
+                    <p>Python / R / Matlab / JavaScript / C / C++</p>
+                </div>
+                <div>
+                    <h4>Inteligencia<br>artificial</h4>
+                    <p>Machine learning / Deep learning / Lógica difusa / Sistemas expertos / Visualización de datos / Análisis de datos</p>
+                </div>
+                <div>
+                    <h4>Bases de datos</h4>
+                    <p>SQL / NoSQL / Diseño de bases de datos / Optimización de datos</p>
+                </div>
+                <div>
+                    <h4>Desarrollo<br>de front end</h4>
+                    <p>HTML / CSS / React</p>
+                </div>
+            </article>
+            <article>
+                <h3 class="section-title">03 EDUCATION</h3>
+                <div>
+                    <h4>2020 - 2024</h4>
+                    <p>Universidad Carlos III - Madrid, España<br>Grado en Ingeniería Informática</p>
+                </div>
+                <div>
+                    <h4>2022 - 2023</h4>
+                    <p>University of Technology - Varsovia, Polonia<br>Programa erasmus</p>
+                </div>
+                <div>
+                    <h4>2018 - 2020</h4>
+                    <p>IES Gran Capitán - Madrid, España<br>Bachillerato de ciencias</p>
+                </div>
+                <div>
+                    <h4>2017 - 2018</h4>
+                    <p>Coosa High School - Gadsden, AL, Estados Unidos<br>Programa de intercambio</p>
+                </div>
+            </article>
+            <article>
+                <h3 class="section-title">04 LANGUAGES</h3>
+                <div>
+                    <h4>España</h4>
+                    <p>Nativo</p>
+                </div>
+                <div>
+                    <h4>Inglés</h4>
+                    <p>C1 Advanced (certificado Cambridge)</p>
+                </div>
+            </article>
+            <article>
+                <h3>05 PROYECTOS SELECCIONADOS</h3>
+                <div id="work">
+                    <h4>Predicción de casos de COVID-19 usando redes de nueronas artificiales</h4>
+                    <p>Desarrollo de una red neuronal, utilizando datos del Novel Coronavirus Cases Data de The Humanitarian Data Exchange, con el objetivo de predecir y analizar patrones en la evolución de casos.</p>
+                </div>
+                <div id="work">
+                    <h4>Predicción de reseñas con procesado de lenguaje natural</h4>
+                    <p>Proyecto de text mining y predicción, empleando reseñas de hoteles. Implementación de técnicas de procesamiento de lenguaje natural y modelado predictivo para predecir las valoraciones de usuarios.</p>
+                </div>
+                <div id="work">
+                    <h4>Optimización de paneles solares en Oklahoma</h4>
+                    <p>Optimización del rendimiento de paneles solares mediante la implementación de modelos de predicción meteorológica a través del análisis de datos climáticos con técnicas avanzadas de machine learning.</p>
+                </div>
+            </article>
+        </section>
+
+        <footer id="footer">
+            <p>¡Hablemos!</p>
+            <div>
+                <a href="mailto:jcoboceldran@gmail.com" class="email">jcoboceldran@gmail.com</a>
+                <a href="tel:+34663897122" class="number">+34 663 897 122</a>
+                <a href="https://www.linkedin.com/in/juan-cobo-celdr%C3%A1n/" class="linkedin">LinkedIn</a>
+                <a href="CV es.pdf"class="curriculum">Curriculum</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function changeToSpanish() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
